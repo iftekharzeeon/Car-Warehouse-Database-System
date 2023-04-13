@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewerTable">
+   <children>
+      <TableView fx:id="carView" layoutX="8.0" layoutY="120.0" prefHeight="344.0" prefWidth="835.0">
+        <columns>
+            <TableColumn prefWidth="96.0" text="Reg Num">
+                <cellValueFactory>
+                    <PropertyValueFactory property="reg" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="117.0" text="Car Maker">
+                <cellValueFactory>
+                    <PropertyValueFactory property="maker" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="118.0" text="Car Model">
+                <cellValueFactory>
+                    <PropertyValueFactory property="model" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="84.0" text="Car Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="68.0" text="Quantity">
+                <cellValueFactory>
+                    <PropertyValueFactory property="quantity" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="67.0" text="Year">
+                <cellValueFactory>
+                    <PropertyValueFactory property="year" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="85.0" text="Color 1">
+                <cellValueFactory>
+                    <PropertyValueFactory property="color1" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="92.0" text="Color 2">
+               <cellValueFactory>
+                  <PropertyValueFactory property="color2" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="107.0" text="Color 3">
+               <cellValueFactory>
+                  <PropertyValueFactory property="color3" />
+               </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <ProgressBar fx:id="progressBar" layoutX="326.0" layoutY="59.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="71.0" layoutY="615.0" mnemonicParsing="false" onAction="#carBuy" prefHeight="44.0" prefWidth="64.0" text="Buy">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="340.0" layoutY="615.0" mnemonicParsing="false" onAction="#searchReg" prefHeight="44.0" prefWidth="77.0" text="Search" />
+      <Button layoutX="709.0" layoutY="658.0" mnemonicParsing="false" onAction="#searchMaker" text="Search" />
+      <TextField fx:id="regField" layoutX="246.0" layoutY="564.0" prefHeight="31.0" prefWidth="253.0" />
+      <TextField fx:id="modelField" layoutX="632.0" layoutY="606.0" promptText="Car Model" />
+      <Label layoutX="243.0" layoutY="516.0" text="Search a car by Reg Model">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="549.0" layoutY="501.0" text="Search a car by maker and model">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="makerField" layoutX="632.0" layoutY="548.0" promptText="Car Maker" />
+      <Label layoutX="21.0" layoutY="533.0" text="Select a car to buy">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="703.0" layoutY="71.0" mnemonicParsing="false" onAction="#refreshTable" text="Refresh Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

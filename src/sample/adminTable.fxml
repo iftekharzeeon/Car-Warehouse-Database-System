@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminListView">
+    <children>
+        <TableView fx:id="carView" layoutX="8.0" layoutY="120.0" prefHeight="344.0" prefWidth="933.0">
+            <columns>
+                <TableColumn fx:id="regNum" onEditCommit="#editReg" prefWidth="96.0" text="Reg Num">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="reg" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="carMaker" onEditCommit="#editMaker" prefWidth="117.0" text="Car Maker">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="maker" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="carModel" onEditCommit="#editModel" prefWidth="118.0" text="Car Model">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="model" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="carPrice" onEditCommit="#editPrice" prefWidth="100.0" text="Car Price">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="price" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="quantity" onEditCommit="#editQuantity" prefWidth="92.0" text="Quantity">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="quantity" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="year" onEditCommit="#editYear" prefWidth="74.0" text="Year">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="year" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="color1" onEditCommit="#editColor1" prefWidth="117.0" text="Color 1">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="color1" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="color2" onEditCommit="#editColor2" prefWidth="111.0" text="Color 2">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="color2" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="color3" onEditCommit="#editColor3" prefWidth="107.0" text="Color 3">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="color3" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <ProgressBar fx:id="progressBar" layoutX="326.0" layoutY="59.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="620.0" layoutY="474.0" mnemonicParsing="false" onAction="#addCar" text="Add a New Car">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="795.0" layoutY="474.0" mnemonicParsing="false" onAction="#deleteCar" text="Delete Car">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="474.0" mnemonicParsing="false" onAction="#refreshTable" text="Refresh Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>

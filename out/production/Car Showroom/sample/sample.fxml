@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="122.0" layoutY="56.0" prefHeight="59.0" prefWidth="451.0" text="Welcome To Car Showroom" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="56.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="200.0" text="Choose User Type">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="167.0" layoutY="345.0" mnemonicParsing="false" onAction="#manfPage" prefHeight="53.0" prefWidth="132.0" text="Manufacturer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="416.0" layoutY="345.0" mnemonicParsing="false" onAction="#viewerPage" prefHeight="53.0" prefWidth="89.0" text="Viewer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="400.0" layoutY="590.0" prefHeight="35.0" prefWidth="273.0" text="Iftekhar E Mahbub Zeeon">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="634.0" prefHeight="35.0" prefWidth="273.0" text="ID: 1805038">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

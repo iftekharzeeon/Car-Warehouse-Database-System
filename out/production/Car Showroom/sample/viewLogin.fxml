@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="689.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewLogin">
+   <children>
+      <Label layoutX="347.0" layoutY="53.0" text="Welcome To Car Showroom">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="359.0" layoutY="301.0" />
+      <Label layoutX="129.0" layoutY="303.0" text="Enter Your Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="585.0" layoutY="301.0" mnemonicParsing="false" onAction="#viewerList" text="Submit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="689.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCar">
+   <children>
+      <Label layoutX="168.0" layoutY="188.0" text="Color 1" />
+      <TextField fx:id="regNum" layoutX="329.0" layoutY="83.0" promptText="Can not be empty" />
+      <TextField fx:id="color1" layoutX="329.0" layoutY="183.0" />
+      <Label layoutX="168.0" layoutY="141.0" text="Year Made" />
+      <Label layoutX="168.0" layoutY="88.0" text="Registration Number" />
+      <TextField fx:id="year" layoutX="329.0" layoutY="136.0" promptText="Must be a number" />
+      <TextField fx:id="color2" layoutX="329.0" layoutY="233.0" />
+      <Label layoutX="168.0" layoutY="238.0" text="Color 2" />
+      <TextField fx:id="color3" layoutX="329.0" layoutY="276.0" />
+      <Label layoutX="168.0" layoutY="281.0" text="Color 3" />
+      <Label layoutX="168.0" layoutY="334.0" text="Car Maker" />
+      <TextField fx:id="maker" layoutX="329.0" layoutY="329.0" promptText="Can not be empty" />
+      <Label layoutX="168.0" layoutY="383.0" text="Car Model" />
+      <TextField fx:id="model" layoutX="329.0" layoutY="378.0" promptText="Can not be empty" />
+      <Label layoutX="168.0" layoutY="431.0" text="Price" />
+      <TextField fx:id="price" layoutX="329.0" layoutY="426.0" promptText="Must be a number" />
+      <Label layoutX="168.0" layoutY="488.0" text="Quantity" />
+      <TextField fx:id="quantity" layoutX="329.0" layoutY="483.0" promptText="Must be a number" />
+      <Button layoutX="451.0" layoutY="577.0" mnemonicParsing="false" onAction="#addTheCar" text="Add">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="34.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
